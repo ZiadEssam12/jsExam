@@ -1,0 +1,86 @@
+@media (max-width: 575.98px) {
+    .container{
+        width:100% !important;
+        max-width: 100% !important;
+    }
+    #Weather {
+        height: 170vh;
+    }
+    .navbar-nav{
+        background-color: #262936;
+        border-radius: 10px;
+    }
+    header #collapsibleNavId ul li{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+}
+
+@media (min-width: 576px){
+    .container{
+        width:100% !important;
+        max-width: 100% !important;
+    }
+    #Weather {
+        height: 175vh;
+    }
+    .navbar-nav{
+        background-color: #262936;
+        border-radius: 10px;
+    }
+
+    header #collapsibleNavId ul li{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+} 
+
+@media (min-width: 768px){
+    .container{
+        width:90% !important;
+        max-width: 90% !important;
+    }
+    #Weather {
+        height: 170vh !important;
+    }
+
+    .navbar-nav{
+        background-color: #262936;
+        border-radius: 10px;
+    }
+
+    header #collapsibleNavId ul li{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+} 
+
+
+@media (min-width: 992px) {
+    .navbar-nav{
+        background-color: transparent;
+    }
+    header #collapsibleNavId ul li{
+        border-bottom: 1px solid transparent;
+    }
+    .container{
+        width:100% !important;
+        max-width: 100% !important;
+    }
+
+    #Weather {
+        height: 80vh !important;
+    }
+    header #collapsibleNavId ul li a.active,
+    header #collapsibleNavId ul li a:hover {
+    border-color: var(--main-color) !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container{
+        width:1170px !important;
+        max-width: 1170px !important;
+    }
+
+}   
+
+

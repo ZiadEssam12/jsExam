@@ -1,0 +1,181 @@
+/* -----------------> Global <----------------->*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+
+* {
+  font-family: "Roboto", "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+:root {
+  --main-padding: 80px;
+  --main-color: #009ad8;
+  --text-color: #bfc1c8;
+  --dark-color: #1e202b;
+  --dark-bg-color:#262936;
+}
+
+header{
+  background-color: var(--dark-color);
+}
+header nav img {
+  width: 64px;
+  height: 38px;
+}
+header .navbar-toggler{
+  box-shadow: none !important;
+  border-color: transparent;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+header .navbar-toggler:hover{
+  border-color: var(--main-color);
+  
+
+  /* New CSS Nesting */
+  & span i{
+    color:var(--main-color) !important;
+  }
+
+}
+
+header .navbar-toggler-icon{
+  background-image: none;
+}
+
+header nav .navbar-brand h1 {
+  font-weight: 700;
+}
+header nav .navbar-brand p {
+  font-size: 10px;
+}
+
+header #collapsibleNavId ul li a {
+  font-size: 14px !important;
+  border: 2px solid transparent !important;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+header #collapsibleNavId ul li a.active,
+header #collapsibleNavId ul li a:hover {
+  color: var(--main-color);
+}
+
+#Weather {
+  height: 80vh;
+  background-color: var(--dark-color);
+}
+
+#Weather .bg-img {
+  background-image: url("../images/bg.png");
+  background-size: cover;
+  height: 350px;
+  background-color: #323544;
+}
+#Weather .search {
+  padding-top: 70px;
+}
+.button-overlay input {
+  padding: 15px 50px 15px 20px;
+  box-shadow: 0px 0px 0px 0px transparent;
+  border-color: transparent !important;
+  background-color: var(--dark-color) !important;
+  color: white !important;
+}
+.button-overlay button {
+  height: 43px;
+  margin-right: 6px;
+  width: 100px;
+  color: white !important;
+  background-color: var(--main-color) !important;
+}
+.button-overlay input::placeholder {
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+#Weather .card {
+  background-color: #323544;
+  color: var(--text-color);
+}
+
+#Weather .card .head {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#Weather > div > div > div.weatherDisplayCards > div {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#Weather #todayWeather h3.degree__C {
+  font-size: 90px;
+  color: white;
+  font-weight: 700;
+}
+
+#Weather .laterWeather h3.degree__C {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+}
+
+.weather__city {
+  font-size: 18px;
+}
+
+#Weather .laterWeather img {
+  width: 48px !important;
+}
+#Weather > div > div > div.weatherDisplayCards > div > div:nth-child(2) .card {
+  background-color: var( --dark-bg-color) !important;
+}
+
+.watherStatus {
+  color: var(--main-color);
+}
+
+#Weather .card {
+  height: 330px;
+}
+
+#Weather .card .body .degree img {
+  width: 90px;
+}
+
+.weatherDisplayCards {
+  margin-top: 80px;
+}
+
+footer {
+  background-color: var( --dark-bg-color);
+}
+
+footer .icons a {
+  width: 40px;
+  height: 40px;
+  aspect-ratio: 1/1;
+  background-color: var(--dark-color);
+  color: var(--main-color);
+  border-radius: 50%;
+  align-items: center;
+  display: grid;
+  place-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer .icons a:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.copywright {
+  color: #bfc1c8;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 35px;
+}
