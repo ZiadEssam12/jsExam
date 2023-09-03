@@ -9,270 +9,223 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
 
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
 
-    <title>Concert</title>
+    <title>Yummy</title>
   </head>
 
-  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
-    <section id="home" class="overflow-hidden">
-      <div
-        class="d-flex justify-content-center align-items-center flex-column h-100 text-white head"
-      >
-        <h1>ُEgyption Party</h1>
-        <p>Let's have Fun</p>
-        <button
-          class="align-self-start ms-2 bg-transparent border-0 fs-2 text-white"
-          id="openNav"
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example" class="d-flex">
+    <header class="position-fixed z-3 d-flex d-none text-white">
+      <aside>
+        <div
+          class="vh-100 d-flex flex-column justify-content-between px-3 py-3"
         >
-          <span> <i class="fa fa-bars"></i> </span>
-          <span class="text">open</span>
-        </button>
+          <div class="overflow-hidden">
+            <ul class="list-unstyled">
+              <li class="my-3" id="searchPage">Search</li>
+              <li class="my-3" id="categoryBtn">Categories</li>
+              <li class="my-3" id="AreaBtn">Area</li>
+              <li class="my-3" id="ingredientsBtn">Ingredients</li>
+              <li class="my-3" id="contactBtn">Contact Us</li>
+            </ul>
+          </div>
+          <div class="info mb-3">
+            <div class="icons">
+              <a href=""><i class="text-white fa-brands fa-facebook"></i></a>
+              <a href=""><i class="text-white fa-brands fa-twitter"></i></a>
+              <a href=""><i class="text-white fa-solid fa-globe"></i></a>
+            </div>
 
-        <div class="nav vh-100 position-fixed start-0 top-0 pt-4">
-          <ul class="list-unstyled px-4 w-100">
-            <li class="text-end me-3 mt-3">
-              <a class="text-white fs-5" href="#" id="closeButton"
-                ><i class="fa fa-x"></i
-              ></a>
-            </li>
-            <li class="mt-4">
-              <a class="text-white fs-3" href="#home">Home</a>
-            </li>
-            <li class="mt-5">
-              <a class="text-white fs-3" href="#slider">Duration</a>
-            </li>
-            <li class="mt-5">
-              <a class="text-white fs-3" href="#countDown">Details</a>
-            </li>
-            <li class="mt-5">
-              <a class="text-white fs-3" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section
-      id="slider"
-      class="py-5 d-flex justify-content-center align-items-center text-center"
-    >
-      <div class="singers py-5 d-flex justify-content-center flex-column w-50">
-        <div class="Singer Singer1">
-          <h2 class="m-0">Singer one</h2>
-          <div class="info-background">
-            <p class="p-2 m-0">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
+            <p>
+              Copyright © 2019 All Rights <br />
+              Reserved.
             </p>
           </div>
         </div>
+      </aside>
 
-        <div class="Singer Singer2">
-          <h2 class="m-0">Singer two</h2>
-          <div class="info-background">
-            <p class="p-2 m-0">
-              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-              velit, sed quia non numquam eius modi tempora incidunt ut labore
-              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-              veniam, quis nostrum exercitationem ullam corporis suscipit
-              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-              vel eum iure reprehenderit qui in ea voluptate velit esse quam
-              nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-              voluptas nulla pariatur?"
-            </p>
-          </div>
+      <nav
+        class="d-flex flex-column justify-content-between align-items-center vh-100 bg-white px-2 py-4"
+      >
+        <img src="./images/logo.png" alt="logo" class="logo" />
+
+        <div class="bars mt-2">
+          <button class="bg-transparent border-0" id="displaySideDiv">
+            <div class="bar bg-black rounded-pill"></div>
+            <div class="bar bg-black rounded-pill"></div>
+            <div class="bar bg-black rounded-pill"></div>
+            <div class="bar bg-black rounded-pill"></div>
+          </button>
         </div>
 
-        <div class="Singer Singer3">
-          <h2 class="m-0">Singer three</h2>
-          <div class="info-background">
-            <p class="p-2 m-0">
-              "But I must explain to you how all this mistaken idea of
-              denouncing pleasure and praising pain was born and I will give you
-              a complete account of the system, and expound the actual teachings
-              of the great explorer of the truth, the master-builder of human
-              happiness. No one rejects, dislikes, or avoids pleasure itself,
-              because it is pleasure, but because those who do not know how to
-              pursue pleasure rationally encounter consequences that are
-              extremely painful. Nor again is there anyone who loves or pursues
-              or desires to obtain pain of itself, because it is pain, but
-              because occasionally circumstances occur in which toil and pain
-              can procure him some great pleasure. To take a trivial example,
-              which of us ever undertakes laborious physical exercise, except to
-              obtain some advantage from it? But who has any right to find fault
-              with a man who chooses to enjoy a pleasure that has no annoying
-              consequences, or one who avoids a pain that produces no resultant
-              pleasure?"
-            </p>
-          </div>
+        <div class="icons d-flex flex-column align-items-center">
+          <a href=""><i class="fa-solid fa-globe text-black"></i></a>
+          <a href=""><i class="fa-solid fa-share-nodes text-black"></i></a>
         </div>
+      </nav>
+    </header>
 
-        <div class="Singer Singer4">
-          <h2 class="m-0">Singer four</h2>
-          <div class="info-background">
-            <p class="p-2 m-0">
-              "At vero eos et accusamus et iusto odio dignissimos ducimus qui
-              blanditiis praesentium voluptatum deleniti atque corrupti quos
-              dolores et quas molestias excepturi sint occaecati cupiditate non
-              provident, similique sunt in culpa qui officia deserunt mollitia
-              animi, id est laborum et dolorum fuga. Et harum quidem rerum
-              facilis est et expedita distinctio. Nam libero tempore, cum soluta
-              nobis est eligendi optio cumque nihil impedit quo minus id quod
-              maxime placeat facere possimus, omnis voluptas assumenda est,
-              omnis dolor repellendus. Temporibus autem quibusdam et aut
-              officiis debitis aut rerum necessitatibus saepe eveniet ut et
-              voluptates repudiandae sint et molestiae non recusandae. Itaque
-              earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
-              voluptatibus maiores alias consequatur aut perferendis doloribus
-              asperiores repellat."
-            </p>
-          </div>
+    <main class="d-flex flex-column w-100">
+      <section id="search" class="w-100 py-4 d-none">
+        <div class="container d-flex column-gap-4 px-5">
+          <input
+            type="text"
+            id="searchByName"
+            class="text-white bg-transparent form-control"
+            placeholder="Search By Name"
+          />
+          <input
+            type="text"
+            id="searchByFirstletter"
+            class="text-white bg-transparent form-control"
+            placeholder="Search By First letter"
+          />
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section
-      id="countDown"
-      class="p-5 d-flex justify-content-center align-items-center"
-    >
-      <div class="container">
-        <div class="row row-cols-1 row-cols-md-4 row-gap-3">
-          <div id="days" class="col">
-            <div class="p-5 border border-1 border-white text-center">
-              <p class="mb-0 p-0 fs-2 fw-semibold">
-                <span id="daysCount">25</span> d
-              </p>
-            </div>
-          </div>
-          <div id="hours" class="col">
-            <div class="p-5 border border-1 border-white text-center">
-              <p class="mb-0 p-0 fs-2 fw-semibold">
-                <span id="hoursCount">7</span> h
-              </p>
-            </div>
-          </div>
-          <div id="minutes" class="col">
-            <div class="p-5 border border-1 border-white text-center">
-              <p class="mb-0 p-0 fs-2 fw-semibold">
-                <span id="minutesCount">25</span> m
-              </p>
-            </div>
-          </div>
-          <div id="seconds" class="col">
-            <div
-              class="p-5 border border-1 border-white d-flex justify-content-center align-items-center"
-            >
-              <p class="mb-0 p-0 fs-2 fw-semibold">
-                <span id="secondsCount">3</span> s
-              </p>
-            </div>
-          </div>
+      <section class="dislay-meals wv-100 d-none">
+        <div class="container">
+          <div
+            id="displayMeals"
+            class="row justify-content-center align-items-center row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 py-5 row-gap-4"
+          ></div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section
-      id="contact"
-      class="p-5 d-flex justify-content-center align-items-center"
-    >
-      <div class="container">
-        <div class="head">
-          <h2>JOIN US</h2>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-          </p>
+      <section id="displayMeal" class="w-100 d-none">
+        <div class="container">
+          <div class="row py-5 g-4" id="putMealsInfo"></div>
         </div>
+      </section>
 
-        <div class="row row-cols-1 row-cols-md-2 justify-content-center g-2 pb-5">
-          <div class="col">
-            <div class="right">
-              <h3 class="h5">CONTACT INFO</h3>
-              <p>
-                Why you should hire me writeup Lorem ipsum dolor sit amet,
-                consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                Aenean massa. Cum sociis natoque nascetur ridiculus mus.
-              </p>
+      <section class="categories w-100 py-5 d-none" id="categories">
+        <div class="container">
+          <div
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 py-2 row-gap-4"
+            id="displayCategories"
+          ></div>
+        </div>
+      </section>
 
-              <div class="address py-5">
-                <p>
-                  <span><i class="fa-solid fa-location-pin pe-3"></i></span> New
-                  Street 22545, Nexa Road, New York City, USA
-                </p>
-                <p>
-                  <span><i class="fa-solid fa-envelope pe-3"></i></span>
-                  <span class="red-color">hello@uigrid.com</span>
-                </p>
-                <p>
-                  <span><i class="fa-solid fa-phone-flip pe-3"></i></span>
-                  001-000-000-000
+      <section id="AreaContainer" class="w-100">
+        <div class="container">
+          <div
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-4 py-5 g-4"
+            id="displayArea"
+          ></div>
+        </div>
+      </section>
+
+      <section id="Ingredients" class="w-100">
+        <div class="container">
+          <div
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-4 py-5 g-4"
+            id="displayIngredients"
+          ></div>
+        </div>
+      </section>
+
+      <section
+        class="contact d-flex text-center justify-content-center align-items-center vh-100 m-auto d-none"
+        id="contact"
+      >
+        <div class="container w-75">
+          <div class="row row-cols-1 row-cols-md-2 row-gap-4">
+            <div class="col">
+              <div>
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Enter Your Name"
+                  name="name"
+                />
+                <p class="mt-2 alert alert-danger d-none">
+                  Special characters and numbers not allowed
                 </p>
               </div>
-
-              <div class="icons d-flex">
-                <a class="icon me-2" href="#"
-                  ><i class="fa-brands fa-twitter"></i
-                ></a>
-                <a class="icon me-2" href="#"
-                  ><i class="fa-brands fa-facebook-f"></i
-                ></a>
-                <a class="icon me-2" href="#"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-                <a class="icon me-2" href="#"
-                  ><i class="fa-brands fa-dribbble"></i
-                ></a>
-                <a class="icon me-2" href="#"
-                  ><i class="fa-brands fa-pinterest-p"></i
-                ></a>
+            </div>
+            <div class="col">
+              <div>
+                <input
+                  class="form-control"
+                  type="email"
+                  placeholder="Enter Your Email"
+                  name="email"
+                />
+                <p class="mt-2 alert alert-danger d-none">
+                  Email not valid *exemple@yyy.zzz
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div>
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Enter Your Phone"
+                  name="phone"
+                />
+                <p class="mt-2 alert alert-danger d-none">
+                  Enter valid Phone Number
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div>
+                <input
+                  class="form-control"
+                  type="number"
+                  placeholder="Enter Your Age"
+                  name="age"
+                />
+                <p class="mt-2 alert alert-danger d-none">Enter valid age</p>
+              </div>
+            </div>
+            <div class="col">
+              <div>
+                <input
+                  class="form-control"
+                  type="password"
+                  id="ContactPasswordInput"
+                  placeholder="Enter Your Password"
+                  name="Password"
+                />
+                <p class="mt-2 alert alert-danger d-none">
+                  Enter valid password *Minimum eight characters, at least one
+                  letter and one number:*
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div>
+                <input
+                  class="form-control"
+                  type="password"
+                  id="ContactrePasswordInput"
+                  placeholder="Repassword"
+                  name="Repassword"
+                />
+                <p class="mt-2 alert alert-danger d-none">
+                  Enter valid repassword
+                </p>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="left">
-              <input
-                type="text"
-                class="form-control rounded-0"
-                placeholder="Enter Name"
-              />
-              <input
-                type="email"
-                class="form-control my-3 rounded-0"
-                placeholder="Enter Email"
-              />
-              <textarea
-                name="message"
-                class="form-control rounded-0"
-                id="message"
-                cols="10"
-                rows="8"
-                placeholder="Enter Message"
-              ></textarea>
-              <p class="my-3">
-                <span class="reaminingChar red-color fs-5">100</span> Character
-                Reamining
-              </p>
-              <button
-                class="text-uppercase red-color-background text-white border-0"
-              >
-                send message
-              </button>
-            </div>
-          </div>
+
+          <button
+            class="btn btn-outline-danger mt-3"
+            disabled
+            id="ContactButtonSubmit"
+          >
+            Submit
+          </button>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
+
+    <div class="spinner">
+      <i class="fa-solid fa-spinner fa-spin"></i>
+    </div>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/code.jquery.com_jquery-3.7.0.js"></script>

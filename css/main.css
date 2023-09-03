@@ -1,5 +1,5 @@
 :root {
-  --pink-color: rgba(214, 46, 51, 0.6);
+  --dark-bg-color:#0D0D0D;
   --red-color: #d62e33;
 }
 
@@ -7,91 +7,127 @@ a {
   text-decoration: none;
 }
 
-.info-background {
-  background-color: #ccc;
+body{
+  background-color: var(--dark-bg-color);
+  color: #fff;
+}
+main{
+  background-color: var(--dark-bg-color);
+  color: #fff;
+  min-height: 100vh;
+}
+.logo{
+  width:50px;
+}
+.fa-x{
+  font-size: 32px;
+  color:black;
 }
 
-.red-color {
-  color: var(--red-color) !important;
+.pointer{
+  cursor: pointer;
 }
 
-.red-color-background {
-  background-color: var(--red-color) !important;
-}
+/* ---Header--- */
 
-h1 {
-  font-size: 60px;
-}
+/* header{
+} */
 
-#home .nav {
-  width: 250px;
-  background-color: #111;
+
+
+header{
+  background-color: var(--dark-bg-color);
+}
+aside{
   display: none;
-}
-#home .nav a {
-  transition: 0.3s;
-}
-#home .nav a:hover {
-  color: rgba(214, 46, 51, 0.4) !important;
-}
-
-#home .head {
+  width:240px;
+  white-space: nowrap;
   position: relative;
 }
 
-#home {
-  height: 88vh;
-  background-image: linear-gradient(var(--pink-color), var(--pink-color)),
-    url("../images/events-heavenly-header.jpg");
-  background-size: 100% 100%;
+aside ul{
+  position: relative;
+
+}
+aside li {
+  cursor: pointer;
+  position: relative;
+}
+header nav{
+  width: 66px;
 }
 
-#slider .Singer h2 {
-  background-color: var(--pink-color);
-  color: white;
-  padding-block: 8px;
+header nav .bar{
+  width:27px;
+  height:4px;
+  background-color: #fff;
+  margin-block: 4px;
+}
+
+
+header nav .icons a:nth-child(1){
+  margin-bottom: -3px;
+}
+
+
+/* Meals display */
+
+#displayMeals .meal-container{
   cursor: pointer;
 }
-#slider .Singer h2::selection {
-  background-color: transparent;
+
+#displayMeals .meal-container  .layer , .categories .layer{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
 }
 
-#countDown {
-  background-image: linear-gradient(var(--pink-color), var(--pink-color)),
-    url("../images/invitation-2508607__340.jpg");
-  color: white;
-  background-size: 100% 100%;
+
+#displayMeals .meal-container:hover .layer , .categories .meal-container:hover .layer{
+  opacity: 1;
+  visibility: visible;
+  top: 0;
 }
 
-#contact .address {
-  color: #777;
+ul li[class="alert"]{
+  width:fit-content
+}
+/* end meals display */
+
+
+/* spinner */
+
+.spinner{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+.spinner i{
+  font-size: 80px;
+}
+/* End spinner */
+
+
+
+
+#searchByName::placeholder , #searchByFirstletter::placeholder{
+  color:#ced4da;
 }
 
-#contact {
-  height: 100vh;
+
+#categories .row .col{
+  cursor: pointer;
 }
 
-#contact .icons .icon {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #777;
-  border: 1px solid #999;
-}
 
-#contact .icons .icon:hover {
-  background-color: var(--red-color);
-  color: white;
-  border-color: transparent;
-}
-
-#contact .head p,
-#contact .right p {
-  color: #777 !important;
-}
-
-#contact button {
-  padding: 10px 20px;
+#AreaContainer i , #Ingredients i{
+ font-size: 4em;
 }
